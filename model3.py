@@ -39,9 +39,9 @@ class Model(nn.Module):
         
         self.softmax = nn.Softmax(dim=1)
         
-        self.dropout1 = nn.Dropout(p=0.5)
-        self.dropout2 = nn.Dropout(p=0.5)
-        self.dropout3 = nn.Dropout(p=0.5)
+        self.dropout1 = nn.Dropout(p=0.3)
+        self.dropout2 = nn.Dropout(p=0.3)
+        self.dropout3 = nn.Dropout(p=0.3)
         
         self.gap = nn.AdaptiveAvgPool1d(1)
         
